@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Study Assistant - Knowt Clone</title>
+    <title>AI Study Assistant - Home</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -20,20 +19,13 @@
             <button id="summarize-btn">Summarize PDF 🚀</button>
         </section>
 
-        <section id="output-section" style="display:none;">
-            <h2>✨ Summarized Content ✨</h2>
-            <div id="summary-output">
-                <h3>Generated Notes:</h3>
-                <p id="generated-notes">Your summarized notes will appear here.</p>
-                <h3>Flashcards:</h3>
-                <div id="flashcards-output">
-                    <p>Your flashcards will appear here.</p>
-                </div>
-                <h3>Quizzes:</h3>
-                <div id="quizzes-output">
-                    <p>Your quizzes will appear here.</p>
-                </div>
-            </div>
+        <section id="navigation">
+            <h2>Navigate to:</h2>
+            <ul>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="flashcards.html">Flashcards</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+            </ul>
         </section>
     </main>
 
@@ -44,3 +36,70 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Assistant - Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🃏 Flashcards</h1>
+    </header>
+
+    <main>
+        <section id="flashcards-output">
+            <h2>Your Flashcards</h2>
+            <p id="flashcards-content">Your flashcards will appear here after summarization.</p>
+        </section>
+        <a href="index.html">Back to Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 AI Study Assistant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Assistant - Quizzes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>❓ Quizzes</h1>
+    </header>
+
+    <main>
+        <section id="quizzes-output">
+            <h2>Your Quizzes</h2>
+            <p id="quizzes-content">Your quizzes will appear here after summarization.</p>
+        </section>
+        <a href="index.html">Back to Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 AI Study Assistant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Assistant - Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📝 Notes</h1
