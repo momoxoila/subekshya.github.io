@@ -3,54 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Tool - Knowt Clone</title>
+    <title>AI Study Assistant</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>📚 Study Tool - Knowt Clone 📚</h1>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#login">Login</a></li>
-                <li><a href="#upload">Upload PDF</a></li>
-            </ul>
-        </nav>
+        <h1>📚 AI Study Assistant 📚</h1>
+        <p>Upload your PDF, and let the AI help you study!</p>
     </header>
 
     <main>
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li><strong>AI-Generated Study Guides:</strong> Automatically create study materials from your notes.</li>
-                <li><strong>Smart Flashcards:</strong> Generate flashcards to enhance retention.</li>
-                <li><strong>AI PDF Summarization:</strong> Summarize PDF documents for easier studying.</li>
-                <li><strong>User-Friendly Interface:</strong> Intuitive design for easy navigation.</li>
-                <li><strong>Mobile App:</strong> Study on-the-go with our mobile application.</li>
-            </ul>
-        </section>
-
-        <section id="login">
-            <h2>Login</h2>
-            <p>Login with your Google account to access your study materials.</p>
-            <button id="login-btn">Login with Google 🌟</button>
-        </section>
-
-        <section id="upload">
+        <section id="upload-section">
             <h2>Upload Your PDF</h2>
             <input type="file" id="pdf-upload" accept="application/pdf">
-            <button id="process-btn">Create Flashcards 🚀</button>
+            <button id="summarize-btn">Summarize PDF 🚀</button>
         </section>
 
-        <section id="output" style="display:none;">
-            <h2>✨ Generated Flashcards ✨</h2>
-            <div id="flashcards"></div>
+        <section id="output-section" style="display:none;">
+            <h2>✨ Summarized Content ✨</h2>
+            <div id="summary-output">
+                <h3>Generated Notes:</h3>
+                <p id="generated-notes">Your summarized notes will appear here.</p>
+                <h3>Flashcards:</h3>
+                <div id="flashcards-output">
+                    <p>Your flashcards will appear here.</p>
+                </div>
+                <h3>Quizzes:</h3>
+                <div id="quizzes-output">
+                    <p>Your quizzes will appear here.</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Study Tool. All rights reserved.</p>
+        <p>&copy; 2023 AI Study Assistant. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
